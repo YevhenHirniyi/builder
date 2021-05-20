@@ -1,0 +1,485 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    &__wrapper {
+        width: 100%;
+        background: rgba(#000, 0.31);
+        min-height: 54px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        min-height: 80px;
+        align-items: center;
+    }
+
+    &__btn {
+        background: transparent;
+        padding: 8px 12px;
+        border: 2px solid #ff9900;
+        color: #ff9900;
+        @extend %gilroy700;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+.header-second-menu__btn {
+    display: none;
+}
+.first-second-menu {
+    display: none;
+}
+.first-menu {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 54px;
+    align-items: center;
+
+    &__social {
+        display: flex;
+    }
+    &__phones {
+        padding-bottom: 7px;
+        padding-right: 82px;
+    }
+    &__phone {
+        padding-left: 47px;
+    }
+    &__social-item {
+        padding-left: 23px;
+    }
+}
+.second-menu {
+    &__btn {
+        display: none;
+    }
+    &__list {
+        display: flex;
+    }
+
+    &__list-item {
+        display: inline-block;
+        & + .second-menu__list-item {
+            padding-left: 60px;
+        }
+    }
+}
+.top {
+    padding-top: 279px;
+    background-image: url("../images/top-bg.jpg");
+    height: 1029px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+    &__inner {
+        max-width: 776px;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-bottom: 29px;
+    }
+    &__text {
+        margin-bottom: 60px;
+    }
+    &__btn {
+        color: #fff;
+        padding: 11px;
+        background: #ff9900;
+        border: none;
+        @extend %gilroy700;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 259px;
+    }
+    &__benefits {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(26px);
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    &__benefits-item {
+        min-height: 169px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+    &__benefits-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        width: 175px;
+    }
+    &__benefits-img {
+        position: absolute;
+        margin-left: 89px;
+        max-width: 92px;
+        max-height: 92px;
+    }
+}
+.about {
+    display: flex;
+    &__inner {
+        margin-left: 187px;
+        margin-top: 148px;
+    }
+    &__texts {
+        max-width: 540px;
+    }
+    &__text {
+        margin-bottom: 27px;
+    }
+    &__title {
+        margin-bottom: 27px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/plan.png);
+        height: 389px;
+        width: 657px;
+        right: 0;
+        top: 1360px;
+        z-index: -1;
+    }
+}
+.stages {
+    padding-top: 65px;
+    background: #000;
+    color: #fff;
+    min-height: 531px;
+
+    &__title {
+        margin-bottom: 160px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 64%;
+            height: 1px;
+            background: #fff;
+            top: -22px;
+            right: -45px;
+        }
+        
+    }
+    &__item-6 {
+        position: relative;
+        &::before {
+            display: none;
+        }
+    }
+    &__subtract {
+        position: absolute;
+        right: 0;
+        top: 0px;
+    }
+    &__text {
+        max-width: 155px;
+    }
+    &__line {
+        height: 3px;
+        background: #ffb800;
+        border-radius: 50%;
+        max-width: 208px;
+    }
+
+    &__num {
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 400;
+    }
+    &__circle {
+        height: 66px;
+        width: 66px;
+        position: absolute;
+        margin-top: -57px;
+        margin-left: 45px;
+    }
+    &__text {
+        margin-top: 30px;
+        font-size: 14px;
+        width: 159px;
+    }
+}
+.portfolio {
+    position: relative;
+    padding-top: 100px;
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/plan1.png);
+        height: 600px;
+        width: 692px;
+        left: 279px;
+        top: 365px;
+        z-index: -1;
+    }
+    &__slider-characteristic {
+        display: flex !important;
+        justify-content: space-between;
+    }
+    &__slider-info {
+        margin-top: 126px;
+        margin-left: 168px;
+    }
+    &__titles {
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__slider-title {
+        font-size: 24px;
+        margin-bottom: 24px;
+        @extend %gilroy600;
+    }
+    &__slider-text {
+        max-width: 504px;
+        margin-bottom: 31px;
+    }
+    &__term-item1 {
+        @extend %gilroy700;
+    }
+
+    &__slider-nav {
+        max-width: 325px;
+        position: absolute;
+        right: 332px;
+        z-index: 5;
+    }
+    &__slider-nav-img {
+        margin-left: 5px;
+        padding: 0;
+        max-height: 105px;
+        max-width: 102px;
+        object-fit: cover;
+    }
+}
+.reviews {
+    margin-top: 94px;
+
+    background-image: url(../images/reviews-bg.jpg);
+    height: 671px;
+    color: #fff;
+    &__wrapper {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(26px);
+        width: 100%;
+        height: 100%;
+    }
+    &__slider {
+        text-align: center;
+        padding-top: 75px;
+    }
+    &__title {
+        max-width: 490px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    &__text {
+        max-width: 561px;
+        margin: 0 auto;
+        font-size: 16px;
+        @extend %gilroy300;
+        line-height: 19.2px;
+        letter-spacing: 0.01em;
+        padding-bottom: 20px;
+    }
+    &__author {
+        font-size: 20px;
+        letter-spacing: -0.015em;
+        line-height: 24px;
+        @extend %gilroy500;
+        margin-bottom: 76px;
+    }
+
+    .slider-button {
+        background: transparent;
+        border: none;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        svg {
+            stroke: #ff9900;
+        }
+        &.slick-disabled {
+            svg {
+                stroke: #ffffff;
+            }
+        }
+        &__left {
+            left: 30%;
+        }
+        &__right {
+            left: 54%;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        li {
+            margin: 0 11px;
+        }
+        button {
+            border: none;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            padding: 0;
+            font-size: 0;
+        }
+        li.slick-active {
+            button {
+                width: 9px;
+                height: 9px;
+                margin-bottom: 12px;
+                background: #ff9900;
+            }
+        }
+    }
+}
+.contact {
+    background: #ffb800;
+    color: #fff;
+    padding-top: 45px;
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    &__text {
+        margin-bottom: 40px;
+    }
+    &__form-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    &__form-input {
+        font-size: 16px;
+        line-height: 18.83px;
+        @extend %gilroy500;
+        letter-spacing: 0.07em;
+        padding-bottom: 5px;
+        width: 43%;
+        color: #fff;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        &::placeholder {
+            color: #fff;
+            font-size: 16px;
+            line-height: 18.83px;
+            @extend %gilroy500;
+            letter-spacing: 0.07em;
+        }
+    }
+    &__form-textarea {
+        font-size: 16px;
+        line-height: 18.83px;
+        @extend %gilroy500;
+        letter-spacing: 0.07em;
+        height: 30px;
+        padding: 0;
+        padding-bottom: 3px;
+        width: 100%;
+        color: #fff;
+        background: transparent;
+        border: none;
+        resize: none;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 40px;
+        &::placeholder {
+            color: #fff;
+            font-size: 16px;
+            line-height: 18.83px;
+            @extend %gilroy500;
+            letter-spacing: 0.07em;
+        }
+    }
+    &__form-button {
+        padding: 11px 25px;
+        background: #fff;
+        border: none;
+        color: #ffb800;
+        font-size: 16px;
+        @extend %gilroy700;
+        margin-bottom: 40px;
+    }
+}
+.footer {
+    padding-top: 156px;
+    background: #000;
+    color: #fff;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 100px;
+    }
+    &__about-text {
+        margin-top: 15px;
+        max-width: 308px;
+        font-size: 16px;
+        @extend %gilroy300;
+    }
+    &__menu {
+        font-size: 16px;
+        padding-top: 9px;
+    }
+    &__menu-item {
+        padding-bottom: 23px;
+    }
+    &__information {
+        padding-top: 9px;
+        font-size: 16px;
+    }
+    &__address {
+        max-width: 145px;
+        margin-bottom: 35px;
+    }
+    &__social {
+        display: flex;
+        flex-direction: column;
+        margin-top: 9px;
+    }
+    &__social-item {
+        margin-bottom: 22px;
+    }
+    &__copyright {
+        font-size: 14px;
+        color: rgba(#fff, 0.29);
+        border-top: 0.5px solid rgba(255, 255, 255, 0.29);
+        padding-top: 14px;
+        padding-bottom: 18px;
+    }
+}
+.bold {
+    @extend %gilroy700;
+}
+
+@import "media";
