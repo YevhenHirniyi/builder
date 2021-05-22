@@ -16,7 +16,7 @@
     &__nav {
         display: flex;
         justify-content: space-between;
-        min-height: 80px;
+        height: 80px;
         align-items: center;
     }
 
@@ -277,8 +277,10 @@
 }
 .reviews {
     margin-top: 94px;
-
     background-image: url(../images/reviews-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
     height: 671px;
     color: #fff;
     &__wrapper {
