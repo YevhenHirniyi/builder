@@ -1,3 +1,10 @@
+
+@media (min-width: 1925px){
+    .portfolio__slider-nav {
+        display: none;
+    }
+}
+
 @media (max-width: 1350px){
     .portfolio__slider-text {
         max-width: 220px;

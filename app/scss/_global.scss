@@ -82,10 +82,9 @@ body {
 	bottom: -94px;
 	right: 0;
 	cursor: pointer;
-
-
+	z-index: 5;
 	&__left {
-		right: 63px;
+		right: 62px;
 	}
 }
 
